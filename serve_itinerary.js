@@ -1524,8 +1524,9 @@ async function fetchRiverFlows() {
   return Object.fromEntries(entries);
 }
 
-http.createServer((req, res) => {
-  const reqPath = decodeURIComponent(req.url);
+function handleRequest(req, res) {
+  const reqUrl = new URL(req.url, "http://localhost");
+  const reqPath = decodeURIComponent(reqUrl.pathname);
 
   if (reqPath === "/" || reqPath === "/index.html") {
     serveGeneratedPage(res);
@@ -1585,6 +1586,14 @@ http.createServer((req, res) => {
     res.writeHead(200, { "Content-Type": contentTypes[ext] || "application/octet-stream" });
     res.end(data);
   });
-}).listen(port, () => {
-  console.log(`Serving trip files at http://localhost:${port}/`);
-});
+}
+
+if (require.main === module) {
+  http.createServer(handleRequest).listen(port, () => {
+    console.log(`Serving trip files at http://localhost:${port}/`);
+  });
+}
+
+module.exports = {
+  handleRequest
+};
