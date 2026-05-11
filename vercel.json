@@ -2,11 +2,7 @@
   "version": 2,
   "functions": {
     "api/index.js": {
-      "includeFiles": [
-        "itinerary.txt",
-        "trip_stops.csv",
-        "google_maps_route_links.txt"
-      ]
+      "includeFiles": "{itinerary.txt,trip_stops.csv,google_maps_route_links.txt}"
     }
   },
   "rewrites": [
