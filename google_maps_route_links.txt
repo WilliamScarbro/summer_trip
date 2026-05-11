@@ -1,0 +1,24 @@
+Google Maps route links
+
+These links are split into route segments so they open more reliably in Google Maps.
+Copy a full link into a browser, or paste into notes on your phone and tap it there.
+
+1. Fort Collins -> Park City -> Elko -> Sierraville -> Placerville -> San Francisco
+https://www.google.com/maps/dir/Fort+Collins,+CO/Park+City,+UT/Elko,+NV/Sierraville,+CA/Placerville,+CA/San+Francisco,+CA
+
+2. San Francisco -> Mount Shasta -> Big Bend -> Klamath Falls -> Kelsay Valley Trailhead -> Glide -> Summit Lake -> Waldo Lake
+https://www.google.com/maps/dir/San+Francisco,+CA/Mount+Shasta,+CA/Big+Bend,+CA/Klamath+Falls,+OR/Kelsay+Valley+Trailhead,+OR/Glide,+OR/Summit+Lake,+OR/Waldo+Lake,+OR
+
+3. Waldo Lake -> McCredie Hot Springs -> Bend
+https://www.google.com/maps/dir/Waldo+Lake,+OR/McCredie+Hot+Springs,+OR/Bend,+OR
+
+4. Bend -> McKenzie Bridge -> Jasper -> Eugene
+https://www.google.com/maps/dir/Bend,+OR/McKenzie+Bridge,+OR/Jasper,+OR/Eugene,+OR
+
+Import option
+
+For a visual map with pins, import trip_stops.csv into Google My Maps:
+- https://www.google.com/mymaps
+- Create a new map
+- Import trip_stops.csv as a layer
+- Use the date or type column for styling if you want to color-code friend stays, van camps, river days, hot springs, and backpacking blocks

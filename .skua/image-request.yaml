@@ -1,0 +1,9 @@
+schemaVersion: 1
+status: applied
+summary: No additional image dependencies needed; remove failed Python pip install
+  because the repo only uses built-in Node modules
+baseImage: ''
+fromImage: ''
+packages: []
+commands: []
+appliedVersion: 2
